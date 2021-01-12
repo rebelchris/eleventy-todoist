@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --side-width: 58px;
+}
+
+main {
+  position: relative;
+  min-height: 100vh;
+}
+
+main aside {
+  width: var(--side-width);
+  background: green;
+  height: 100%;
+}
+
+main nav {
+  width: var(--side-width);
+  background: red;
+  height: 100%;
+}
+/*# sourceMappingURL=global.css.map */
