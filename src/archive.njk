@@ -1,0 +1,19 @@
+---
+title: Archive
+pagination:
+  data: collections.posts
+  size: 1
+  alias: posts
+---
+
+{% extends 'layouts/base.njk' %}
+
+{% set postListItems = pagination.items %}
+
+{% block content %}
+
+  <main id="main-content" tabindex="-1">
+    {% include "partials/components/post-list.njk" %}
+    {% include "partials/components/pagination.njk" %}
+  </main>
+{% endblock %}

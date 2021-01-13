@@ -1,0 +1,11 @@
+{% if postListItems.length %}
+  <ul>
+    {% for item in postListItems %}
+        <li>
+          <h3>
+            <a href="{{ item.url }}" title="{{ item.data.title }}">{{ item.data.title }}</a>
+          </h3>
+        </li>
+    {% endfor %}
+  </ul>
+{% endif %}
