@@ -1,4 +1,8 @@
 module.exports = function (config) {
+  config.addPassthroughCopy({
+    "src/_includes/assets/css/global.css": "./global.css",
+  });
+
   // Custom collections
   const now = new Date();
   const livePosts = (post) => post.date <= now;

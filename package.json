@@ -3,15 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
+    "autoprefixer": "^10.2.1",
     "concurrently": "^5.3.0",
-    "sass": "^1.32.4"
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2"
   },
-  "devDependencies": {},
   "scripts": {
-    "sass:process": "sass src/scss/global.scss src/_includes/assets/css/global.css --style=compressed",
-    "start": "concurrently \"npm run sass:process -- --watch\" \"npm run serve\"",
+    "tailwind:process": "npx postcss src/scss/global.css --o src/_includes/assets/css/global.css --watch",
+    "start": "concurrently \"npm run tailwind:process\" \"npm run serve\"",
     "serve": "npx eleventy --serve"
   },
   "author": "",

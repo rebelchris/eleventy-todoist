@@ -4,13 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <style>
-      {% include "assets/css/global.css" %}
-    </style>
+    <link rel="stylesheet" href="/global.css"/>
   </head>
   <body>
-    <main>
-      <aside>
+    <main class="relative pl-28">
+      <aside class="fixed left-0 w-14">
         <ul>
           <li>
             <a
@@ -77,8 +75,8 @@
           </li>
         </ul>
       </aside>
-      <nav>
-        <input type="checkbox" id="toggle" class="menu--checkbox" />
+      <nav class="fixed w-14 l-14 left-14">
+        <input type="checkbox" id="toggle" class="hidden menu--checkbox" />
         <label for="toggle">
           <svg
             height="19"
