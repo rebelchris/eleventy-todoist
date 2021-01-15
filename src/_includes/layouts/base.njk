@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="/global.css"/>
   </head>
   <body>
-    <main class="relative pl-28">
-      <aside class="fixed left-0 w-14">
+    <main class="relative min-h-screen pl-28">
+      <aside class="fixed top-0 left-0 z-10 flex items-end justify-center min-h-screen w-14 bg-purple">
         <ul>
-          <li>
+          <li class="flex items-center justify-center border-t border-white w-14 h-14">
             <a
+              class="flex items-center justify-center text-white border border-white rounded-full w-7 h-7"
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.facebook.com/TheTodoistBlog/"
@@ -20,7 +21,7 @@
                 focusable="false"
                 data-prefix="fab"
                 data-icon="facebook-f"
-                class="svg-inline--fa fa-facebook-f fa-w-10"
+                class="w-2.5"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 320 512"
@@ -31,8 +32,9 @@
                 ></path></svg
             ></a>
           </li>
-          <li>
+          <li class="flex items-center justify-center border-t border-white w-14 h-14">
             <a
+              class="flex items-center justify-center text-white border border-white rounded-full w-7 h-7"
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.instagram.com/the_todoist/"
@@ -41,7 +43,7 @@
                 focusable="false"
                 data-prefix="fab"
                 data-icon="instagram"
-                class="svg-inline--fa fa-instagram fa-w-14"
+                class="w-2.5"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 448 512"
@@ -52,8 +54,9 @@
                 ></path></svg
             ></a>
           </li>
-          <li>
+          <li class="flex items-center justify-center border-t border-white w-14 h-14">
             <a
+              class="flex items-center justify-center text-white border border-white rounded-full w-7 h-7"
               target="_blank"
               rel="noopener noreferrer"
               href="http://pinterest.com/thetodoist"
@@ -62,7 +65,7 @@
                 focusable="false"
                 data-prefix="fab"
                 data-icon="pinterest-p"
-                class="svg-inline--fa fa-pinterest-p fa-w-12"
+                class="w-2.5"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 384 512"
@@ -75,9 +78,9 @@
           </li>
         </ul>
       </aside>
-      <nav class="fixed w-14 l-14 left-14">
+      <nav class="fixed top-0 min-h-screen left-14 bg-light-blue w-14">
         <input type="checkbox" id="toggle" class="hidden menu--checkbox" />
-        <label for="toggle">
+        <label for="toggle" class="absolute z-30 flex items-center justify-center w-14 h-14">
           <svg
             height="19"
             viewBox="0 0 21 19"
@@ -99,14 +102,14 @@
             </g>
           </svg>
         </label>
-        <div class="menu">
-          <a href="/" class="menu--logo">
-            <img src="https://thetodoist.com/static/media/logo.778cffe4.png" />
+        <div class="absolute top-0 z-0 min-h-screen overflow-hidden transition-all duration-500 ease-in-out menu w-44 -left-44 bg-light-blue">
+          <a href="/" class="flex justify-center mt-24">
+            <img class="w-20" src="https://thetodoist.com/static/media/logo.778cffe4.png" />
           </a>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Home</a></li>
+          <ul class="mt-10">
+            <li class="px-6 pb-6"><a class="no-underline text-purple" href="#">Home</a></li>
+            <li class="px-6 pb-6"><a class="no-underline text-purple" href="#">Home</a></li>
+            <li class="px-6 pb-6"><a class="no-underline text-purple" href="#">Home</a></li>
           </ul>
         </div>
       </nav>
