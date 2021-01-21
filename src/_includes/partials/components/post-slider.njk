@@ -1,0 +1,16 @@
+{% if postListItems.length %}
+  <ul class="flex mt-24 mb-24 overflow-x-auto overflow-y-visible">
+    {% for item in postListItems %}
+        <li class="flex-grow-0 flex-shrink-0 mr-6 w-72 h-96">
+          <a href="{{ item.url }}" title="{{ item.data.title }}" class="relative flex justify-center w-full h-full align-center">
+            <img src="https://via.placeholder.com/800x600" class="object-cover w-full h-full" />
+            <div class="absolute flex flex-col justify-center w-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-1/2">
+              <p class="mb-2 text-purple">To do</p>
+              <h3 class="w-full mb-4 text-3xl font-bold border-b-2 text-purple border-purple">This is {{ item.data.title }}</h3>
+              <button class="flex justify-between text-xs text-purple font-small">Read more <i>&#8594;</i></button>
+            </div>
+          </a>
+        </li>
+    {% endfor %}
+  </ul>
+{% endif %}
