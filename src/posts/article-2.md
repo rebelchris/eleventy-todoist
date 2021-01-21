@@ -4,7 +4,7 @@ title: "Article 2"
 metaTitle: "Article 2"
 metaDesc: "todo"
 socialImage: images/article-2.jpg
-date: 2020-09-12T03:00:00.000Z
+date: 2020-08-12T03:00:00.000Z
 tags:
   - health
 ---

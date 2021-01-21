@@ -12,6 +12,11 @@ module.exports = function (config) {
     ].reverse();
   });
 
+  config.addFilter("filteredPosts", function (value, limit = 2) {
+    value.splice(0, limit);
+    return value;
+  });
+
   return {
     dir: {
       input: "src",

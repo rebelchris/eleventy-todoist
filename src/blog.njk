@@ -1,0 +1,25 @@
+---
+title: Blog
+pagination:
+  data: collections.posts
+  size: 10
+  alias: posts
+---
+
+{% extends 'layouts/base.njk' %}
+
+{% set firstItem = pagination.items[0] %}
+{% set secondItem = pagination.items[1] %}
+{% set postListItems = collections.posts | filteredPosts(2) %}
+
+{% block content %}
+
+  <main id="main-content" tabindex="-1">
+  <div class="container m-auto">
+    {% include "partials/components/post-left.njk" %}
+    {% include "partials/components/post-right.njk" %}
+    {% include "partials/components/post-list.njk" %}
+    {% include "partials/components/pagination.njk" %}
+    </div>
+  </main>
+{% endblock %}
