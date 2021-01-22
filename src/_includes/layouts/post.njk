@@ -1,12 +1,15 @@
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
-<div class="row">
-  <div class="col w-1/2">
-    <h1>{{ title }}</h1>
-  </div>
-  <div class="col w-1/2">
-    {{ content | safe }}
-  </div>
-</div>
-{% endblock %}
+  <main class="flex flex-col-reverse md:flex-row">
+    <div class="w-full p-4 py-24 md:w-1/2">
+      <h1 class="mb-8 text-4xl font-bold">{{ title }}</h1>
+      {% for image in postImages[page.fileSlug] %}
+          <img src="/images/{{page.fileSlug}}/{{ image }}" class="w-full mb-6 shadow-xs">
+      {% endfor %}
+    </div>
+    <div class="w-full min-h-screen p-4 py-24 text-white md:w-1/2 bg-purple">
+      {{ content | safe }}
+    </div>
+  </main>
+{% endblock %}  

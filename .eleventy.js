@@ -2,6 +2,7 @@ module.exports = function (config) {
   config.addPassthroughCopy({
     "src/_includes/assets/css/global.css": "./global.css",
   });
+  config.addPassthroughCopy("src/images");
 
   // Custom collections
   const now = new Date();
