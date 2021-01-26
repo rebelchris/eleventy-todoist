@@ -6,6 +6,11 @@ module.exports = {
       colors: {
         purple: "#2d334d",
         "light-blue": "#d5d8e0",
+        pink: "#ef4e5e",
+      },
+      backgroundImage: {
+        "home-1": "url('images/home-intro.jpg')",
+        "pattern-striped": "url('images/pattern-striped.png')",
       },
     },
   },

@@ -1,5 +1,63 @@
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
-  <div class="max-w-sm p-3 m-4 rounded-lg shadow-lg">Testing tailwind</div>
+
+  <main class="max-h-screen overflow-y-scroll snap snap-y snap-mandatory">
+    <section class="flex items-center justify-center w-full h-screen bg-center bg-cover snap-start bg-home-1">
+      <img alt="The todoist logo" title="The Todoist Logo" src="images/logo.png">
+    </section>
+    <section class="flex items-center justify-center w-full h-screen snap-start">
+      <div class="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
+        <div class="z-10 flex flex-col justify-center col-span-3 col-start-2 row-start-1">
+          <h1 class="font-black text-purple">About The Todoist</h1>
+          <h3 class="text-pink">Coffee, Adrenaline, and a bunch off craziness</h3>
+        </div>
+        <div class="flex flex-col items-end col-span-6 col-start-3 row-start-1">
+          <img src="https://thetodoist.com/static/media/home_about.104e3ad7.jpg" />
+          <a href="/about" class="mt-2 text-xs underline">Find out more &rarr;</a>
+        </div>
+      </div>
+    </section>
+    <section class="flex items-center justify-center w-full h-screen text-white bg-purple snap-start">
+      <div class="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
+        <div class="col-span-5 col-start-2">
+          <img src="https://thetodoist.com/img/blog/forgotten-punctuation/overview.jpg" />
+        </div>
+        <div class="flex flex-col justify-center col-span-3 col-start-8">
+          <h2 class="font-black">Lorem ipsum dolor sit amet</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing, sed diam, sed diam.</p>
+          <a href="#" class="mt-2 text-xs underline">Read more &rarr;</a>
+        </div>
+      </div>
+    </section>
+    <section class="flex items-center w-full h-screen bg-indigo-200 bg-center bg-cover text-purple snap-start" style="background-image: url(https://thetodoist.com/img/blog/beach-workouts/running.jpg)">
+      <div class="w-1/12">&nbsp;</div>
+      <div class="w-3/12">
+        <div class="relative"><span class="absolute flex w-full h-0.5 -ml-4 bg-purple -left-full top-1/2"></span>Health</div>
+        <a href="#">
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing, sed diam, sed diam.</p>
+        </a>
+        <a href="#" class="mt-2 text-xs underline">Read more &rarr;</a>
+      </div>
+    </section>
+    <section class="flex items-center justify-center w-full h-screen bg-pattern-striped snap-start">
+      <div class="grid grid-flow-row grid-cols-12 grid-rows-1 gap-8">
+        <div class="col-span-10 col-start-2">
+        <h2 class="font-black">Coffee? Sure let's do it.</h2>
+        <strong class="flex w-1/2">Always up for meeting new people, learning stuff, trying new things, so please give me a shout out if you want to be in touch.</strong>
+
+        <div class="flex mt-8">
+          <div class="w-1/2">
+            <h4>Contact me</h4>
+            <p>Send me an email on <a class="underline" href="mailto:info@thetodoist.com">info@thetodoist.com</a></p>
+          </div>
+          <div class="w-1/2">
+            <h4>Currently in</h4>
+            <p>Cape Town, South Africa</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 {% endblock %}

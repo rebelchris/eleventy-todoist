@@ -7,13 +7,36 @@ main nav .menu--checkbox:checked ~ .menu {
 }
 
 @layer base {
+  body {
+    background: #efefef;
+  }
     h1 {
       @apply text-4xl;
     }
     h2 {
       @apply mb-4 text-2xl;
     }
+    h3 {
+      @apply text-xl;
+    }
+    h4 {
+      @apply text-xl;
+    }
     p {
         @apply mb-4;
+    }
+  }
+  @layer utilities {
+    .snap {
+      scroll-snap-type: var(--scroll-snap-direction) var(--scroll-snap-constraint)
+    }
+    .snap-y {
+      --scroll-snap-direction: y;
+    }
+    .snap-mandatory {
+      --scroll-snap-constraint: mandatory;
+    }
+    .snap-start {
+      scroll-snap-align: start;
     }
   }
