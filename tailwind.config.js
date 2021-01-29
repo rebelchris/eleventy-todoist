@@ -11,6 +11,7 @@ module.exports = {
       backgroundImage: {
         "home-1": "url('images/home-intro.jpg')",
         "pattern-striped": "url('images/pattern-striped.png')",
+        "pattern-dots": "url('images/pattern-dot.png')",
       },
     },
   },
